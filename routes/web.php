@@ -26,6 +26,8 @@ Route::get('/dashboard', function () {
 
 Route::middleware('auth')->group(function () {
     Route::get('/barang', [BarangController::class, 'index'])->name('barang.index');
+    Route::get('/history', [BarangController::class, 'history'])->name('history');
+    Route::get('/keranjang', [BarangController::class, 'keranjang'])->name('keranjang');
 
 
 

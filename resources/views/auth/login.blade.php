@@ -18,11 +18,11 @@
                 <img class="w-8 h-8" src="asset/icon/profileicon.png" alt="">
             </div>
         <div>
-            <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email</label>
+            <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Email</label>
             <input style="width: 300px" name="email" type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-600 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
         </div>
         <div>
-            <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Kata Sandi</label>
+            <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Kata Sandi</label>
             <input name="password" style="width: 300px"type="password" id="password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-600 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
         </div>
         <button type="submit" class="btn btn-neutral mt-3 ">LOGIN</button>
@@ -44,7 +44,7 @@
         </div>
         </div>
         <div class="flex justify-center">
-            <p class="mb-0 mt-2 pt-1 text-sm font-semibold text-white">
+            <p class="mb-0 mt-2 pt-1 text-sm font-semibold text-black">
                 Belum punya akun?
                 <a href="/register" class="text-danger transition duration-150 ease-in-out hover:text-danger-600 focus:text-danger-600 active:text-danger-700">Daftar akun disini</a>
             </p>

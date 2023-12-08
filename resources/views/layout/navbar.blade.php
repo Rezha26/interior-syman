@@ -1,4 +1,4 @@
-<div class="navbar bg-base-100 container">
+<div class="navbar bg-base-100 container" style="position: fixed">
   <div class="navbar-start">
     <div class="dropdown">
       <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -6,17 +6,10 @@
       </label>
       <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
         <li><a>Barang</a></li>
-      <li><a>Jasa</a></li>
-      <li><a
-        href="{{ route('barang.index') }}"
-        >Barang & Jasa</a></li>
-      <li><a>Reza</a></li>
+        <li><a>History</a></li>
       </ul>
     </div>
-    <a class="btn btn-ghost text-xl"
-    href="{{ route('home') }}"
-    
-    >
+    <a class="btn btn-ghost text-xl"href="{{ route('home') }}">
       <img width="70" src="{{ asset('asset/image/logosyam.png') }}" alt="syam">
     </a>
   </div>
@@ -25,16 +18,17 @@
       <li><a
         href="{{ route('barang.index') }}"
         >Barang</a></li>
-      <li><a>Jasa</a></li>
-      <li><a>Barang & Jasa</a></li>
-      <li><a>Reza</a></li>
+      <li><a href="{{ route('history')}}"
+        >History</a></li>
     </ul>
   </div>
   <div class="navbar-end">
     @if (Auth::user())
-    <div class="indicator mr-2">
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
-      <span class="badge badge-sm indicator-item">8</span>
+    <div class="indicator mr-2"><a href="{{route('keranjang')}}"
+      <button type="button" class="py-3 px-4 flex justify-center items-center h-[2.875rem] w-[2.875rem] text-sm font-semibold rounded-lg border border-transparent bg-black-600 text-white hover:bg-gray-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none ">
+        <svg class="flex-shrink-0 w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 11 4-7"/><path d="m19 11-4-7"/><path d="M2 11h20"/><path d="m3.5 11 1.6 7.4a2 2 0 0 0 2 1.6h9.8c.9 0 1.8-.7 2-1.6l1.7-7.4"/><path d="m9 11 1 9"/><path d="M4.5 15.5h15"/><path d="m15 11-1 9"/></svg>
+      </button>
+    </a>
     </div>
     <div class="dropdown dropdown-end">
       <label tabindex="0" class="btn btn-ghost btn-circle avatar">
