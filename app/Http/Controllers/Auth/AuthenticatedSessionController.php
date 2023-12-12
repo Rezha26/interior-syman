@@ -28,6 +28,13 @@ class AuthenticatedSessionController extends Controller
         $request->authenticate();
 
         $request->session()->regenerate();
+
+        $user = Auth::user();
+        // dd($user);
+        if($user->role=='admin'){
+        return redirect()->route('management-barang.index');
+
+        }
         return redirect()->route('home');
 
 
