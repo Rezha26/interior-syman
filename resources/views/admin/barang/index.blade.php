@@ -1,6 +1,6 @@
 @extends('layout.theme_admin')
 @section('content')
-    <div class="bg-primary pt-10 pb-21"></div>
+    <div style= "background-color:#f0ebe3" class="pt-10 pb-21"></div>
     <div class="container-fluid mt-n22 px-6">
         <div class="col-lg-12 col-md-12 col-12 my-2">
             <!-- Page header -->
@@ -32,6 +32,7 @@
                                 <th>deskripsi</th>
                                 <th>Stock</th>
                                 <th>Harga</th>
+                                <th>Gambar</th>
                                 <th></th>
 
                             </tr>
@@ -46,17 +47,21 @@
                                 <td class="align-middle">{{ $item->deskripsi }}</td>
                                 <td class="align-middle">{{ $item->stock }}</td>
                                 <td class="align-middle">{{ $item->harga }}</td>
+                                <td class="align-middle">
+                                    <img src="{{ asset('storage/asset/produk/'.$item->gambar) }}" width="25" alt="">
+                                </td>
 
                                 <td class="align-middle d-flex">
                                     <a href="{{ route('management-barang.edit',['id' => $item->id]) }}">
-                                        <button class="btn btn-primary btn-sm">update</button>                                    
+                                        <button class="btn btn-primary btn-sm">edit</button>                                    
                                     </a>
 
-                                    <form method="POST" action="#">
-                                        @method('delete')
+                                    <form method="POST" action="{{ route('management-barang.delete',['id' => $item->id]) }}">
+                                        @method('DELETE')
                                         @csrf
-                                        <button class="btn btn-danger btn-sm">delete</button>
+                                        <button type="submit" class="btn btn-danger btn-sm">Delete</button>
                                     </form>
+                                    
 
                                 </td>
                             </tr>

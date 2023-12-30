@@ -13,26 +13,35 @@
               <p class="mb-6">Please enter your user information.</p>
             </div>
             <!-- Form -->
-            <form method="POST" action="{{ route('management-barang.update',['id' => $item->id]) }}">
+            <form method="POST" action="{{ route('management-barang.update',['id' => $barang->id]) }}">
             @csrf
             @method('put')
               <!-- Username -->
               <div class="mb-3">
                 <label for="name" class="form-label">name</label>
                 <input
-                value="{{ $item->name }}"
+                value="{{ $barang->name }}"
                 type="text" id="name" class="form-control" name="name" placeholder="name produk here" required="">
               </div>
               <div class="mb-3">
                 <label for="deskripsi" class="form-label">Deskripsi</label>
-                <input type="text" id="deskripsi" class="form-control" name="deskripsi" placeholder="deskripsi produk here" required="">
+                <input 
+                value="{{ $barang->deskripsi }}"
+                
+                type="text" id="deskripsi" class="form-control" name="deskripsi" placeholder="deskripsi produk here" required="">
               </div>
               <div class="mb-3">
                 <label for="stock" class="form-label">stock</label>
-                <input type="number" id="stock" class="form-control" name="stock" placeholder="stock produk here" required="">
+                <input 
+                value="{{ $barang->stock }}"
+                
+                type="number" id="stock" class="form-control" name="stock" placeholder="stock produk here" required="">
               </div>
               <label for="harga" class="form-label">harga</label>
-                <input type="number" id="harga" class="form-control" name="harga" placeholder="harga produk here" required="">
+                <input 
+                value="{{ $barang->harga }}"
+                
+                type="number" id="harga" class="form-control" name="harga" placeholder="harga produk here" required="">
               </div>
               <div>
                 <!-- Button -->

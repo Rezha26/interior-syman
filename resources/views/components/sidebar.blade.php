@@ -1,11 +1,18 @@
-<nav class="navbar-vertical navbar">
+<nav style= "background-color: white" class= "navbar-vertical navbar">
     <div class="nav-scroller">
         <!-- Brand logo -->
-        <a class="navbar-brand" href="./index.html">
-            <img src="{{ url('assets/images/brand/logo/logo.svg') }}" alt="" />
-        </a>
+        
         <!-- Navbar nav -->
         <ul class="navbar-nav flex-column" id="sideNavbar">
+            <li class="nav-item flex">
+                <div>
+                    <a class="nav-link" href="#">
+                        <img src="{{ url('asset/image/logosyam 1.png') }}" alt="" width="50" height="50" />
+                    </a>
+                </div>
+                
+
+            </li>
             <li class="nav-item">
                 <a class="nav-link has-arrow  active " href="/dashboard">
                     <i data-feather="home" class="nav-icon icon-xs me-2"></i> Dashboard
@@ -15,9 +22,9 @@
 
 
             <!-- Nav item -->
-            <li class="nav-item">
+            {{-- <li class="nav-item">
                 <div class="navbar-heading">Layouts & Pages</div>
-            </li>
+            </li> --}}
 
 
             <!-- Nav item -->
@@ -102,21 +109,21 @@
                 <a class="nav-link" href="#">
                     <i data-feather="sidebar" class="nav-icon icon-xs me-2">
                     </i>
-                    Request Peminjaman
+                    Customer
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">
                     <i data-feather="sidebar" class="nav-icon icon-xs me-2">
                     </i>
-                    Peminjaman
+                    Status
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link " href="#">
                     <i data-feather="sidebar" class="nav-icon icon-xs me-2">
                     </i>
-                    Pengembalian
+                    Pesanan
                 </a>
             </li>
             

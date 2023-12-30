@@ -36,12 +36,12 @@
               <li class="list-group-item bg-light">
 
 
-                <a href="#" class="text-muted">
+                {{-- <a href="#" class="text-muted">
                     <h5 class=" mb-1">Rishi Chopra</h5>
                     <p class="mb-0">
                       Mauris blandit erat id nunc blandit, ac eleifend dolor pretium.
                     </p>
-                </a>
+                </a> --}}
 
 
 
@@ -50,12 +50,12 @@
              <li class="list-group-item">
 
 
-              <a href="#" class="text-muted">
+              {{-- <a href="#" class="text-muted">
                   <h5 class=" mb-1">Neha Kannned</h5>
                   <p class="mb-0">
                     Proin at elit vel est condimentum elementum id in ante. Maecenas et sapien metus.
                   </p>
-              </a>
+              </a> --}}
 
 
 
@@ -64,12 +64,12 @@
               <li class="list-group-item">
 
 
-                <a href="#" class="text-muted">
+                {{-- <a href="#" class="text-muted">
                     <h5 class=" mb-1">Nirmala Chauhan</h5>
                     <p class="mb-0">
                       Morbi maximus urna lobortis elit sollicitudin sollicitudieget elit vel pretium.
                     </p>
-                </a>
+                </a> --}}
 
 
 
@@ -78,12 +78,12 @@
               <li class="list-group-item">
 
 
-                    <a href="#" class="text-muted">
+                    {{-- <a href="#" class="text-muted">
                         <h5 class=" mb-1">Sina Ray</h5>
                         <p class="mb-0">
                           Sed aliquam augue sit amet mauris volutpat hendrerit sed nunc eu diam.
                         </p>
-                    </a>
+                    </a> --}}
 
 
 

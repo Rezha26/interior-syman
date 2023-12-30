@@ -33,6 +33,8 @@ Route::middleware('auth')->group(function () {
     Route::get('/management-barang/create', [ManagementBarangController::class, 'create'])->name('management-barang.create');
     Route::post('/management-barang/store', [ManagementBarangController::class, 'store'])->name('management-barang.store');
     Route::get('/management-barang/{id}/edit', [ManagementBarangController::class, 'edit'])->name('management-barang.edit');
+    Route::put('/management-barang/{id}/update', [ManagementBarangController::class, 'update'])->name('management-barang.update');
+    Route::delete('/management-barang/{id}/delete', [ManagementBarangController::class, 'delete'])->name('management-barang.delete');
 
 
 

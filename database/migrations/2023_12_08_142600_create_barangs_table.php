@@ -14,9 +14,11 @@ return new class extends Migration
         Schema::create('barangs', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->string('gambar');
             $table->string('deskripsi');
             $table->integer('stock');
             $table->integer('harga');
+
             $table->timestamps();
         });
     }
