@@ -15,7 +15,7 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link has-arrow  active " href="/dashboard">
-                    <i data-feather="home" class="nav-icon icon-xs me-2"></i> Dashboard
+                    <i data-feather="home" class="nav-icon icon-xs me-2"></i> Barang
                 </a>
 
             </li>
@@ -102,17 +102,17 @@
                 <a class="nav-link" href="#">
                     <i data-feather="sidebar" class="nav-icon icon-xs me-2">
                     </i>
-                    Barang
+                    History
                 </a>
             </li>
-            <li class="nav-item">
+            {{-- <li class="nav-item">
                 <a class="nav-link" href="#">
                     <i data-feather="sidebar" class="nav-icon icon-xs me-2">
                     </i>
                     Customer
                 </a>
-            </li>
-            <li class="nav-item">
+            </li> --}}
+            {{-- <li class="nav-item">
                 <a class="nav-link" href="#">
                     <i data-feather="sidebar" class="nav-icon icon-xs me-2">
                     </i>
@@ -125,7 +125,7 @@
                     </i>
                     Pesanan
                 </a>
-            </li>
+            </li> --}}
             
             {{-- @endif --}}
 
