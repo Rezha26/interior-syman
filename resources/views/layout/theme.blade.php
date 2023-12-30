@@ -17,7 +17,7 @@
     <!-- Elemen berukuran panjang dengan latar belakang merah -->
     @include('layout.navbar')
     <div class="flex w-full justify-center">
-        <div class="container w-full h-full">
+        <div class="container w-full h-full mt-[85px]">
             @yield('content')
         </div>
     </div>
