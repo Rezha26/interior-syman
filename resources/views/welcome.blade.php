@@ -1,7 +1,7 @@
 @extends('layout.theme')
 @section('content')
 <article>
-    <div style="background-color: #f0ebe3" class="max-h py-6">
+    <div style="background-color: #f0ebe3 " class="max-h py-6" src="">
         <div class="flex justify-center mb-5">
             <p style="font-family: 'Montserrat', sans-serif;" class="text-5xl text-gray-600 mt-3">SYMAN INTERIOR</p>
         </div>
