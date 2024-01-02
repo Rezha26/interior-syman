@@ -59,11 +59,13 @@ class ManagementBarangController extends Controller
             'deskripsi' => 'required',
             'stock' => 'required',
             'harga' => 'required',
+            'gambar' => 'required|file',
         ]);
         $barang->name = $attrs['name'];
         $barang->deskripsi = $attrs['deskripsi'];
         $barang->stock = $attrs['stock'];
         $barang->harga = $attrs['harga'];
+        $barang->gambar = $attrs['gambar'];
         $barang->save();
         return redirect()
             ->route('management-barang.index')

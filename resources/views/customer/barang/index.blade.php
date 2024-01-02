@@ -2,9 +2,8 @@
 @section('content')
     <main style="background-color: #f0ebe3" class="max-h py-6">
         <div class="flex flex-wrap justify-center">
-   
-           @foreach ($barang as $item)
-           <div class="card card-compact bg-base-100 shadow-2xl mx-1" style="width: 300px;">
+            @foreach ($barang as $item)
+            <div class="card card-compact bg-base-100 shadow-2xl mx-1" style="width: 300px;">
             <center>
                 <figure style="height: 100px; width: 100px">
                     <img class="w-full h-full" src="{{ asset('storage/asset/produk/'.$item->gambar) }}" alt="Shoes" />
