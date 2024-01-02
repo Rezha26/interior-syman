@@ -53,7 +53,7 @@
 
                                 <td class="align-middle d-flex">
                                     <a href="{{ route('management-barang.edit',['id' => $item->id]) }}">
-                                        <button class="btn btn-primary btn-sm">edit</button>                                    
+                                        <button class="btn btn-primary btn-sm">Edit</button>                                    
                                     </a>
 
                                     <form method="POST" action="{{ route('management-barang.delete',['id' => $item->id]) }}">

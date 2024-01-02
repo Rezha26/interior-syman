@@ -43,6 +43,13 @@
                 
                 type="number" id="harga" class="form-control" name="harga" placeholder="harga produk here" required="">
               </div>
+              <div class="mb-3">
+              <label for="gambar" class="form-label">Gambar</label>
+                <input
+                value="{{$barang->gambar}}"
+                
+                required type="file" accept="image/*" id="gambar" class="form-control" name="gambar" placeholder="Gambar produk here" required="">
+            </div>
               <div>
                 <!-- Button -->
                 <div class="d-grid">
