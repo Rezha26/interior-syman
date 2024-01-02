@@ -2,8 +2,8 @@
 
 use App\Http\Controllers\Customer\BarangController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\OrderHistoryController;
 use Illuminate\Support\Facades\Route;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
